@@ -1,0 +1,39 @@
+.header {
+    min-height: 80px;
+    background: #00FFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 50px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.GreetingMessage {
+    color: rgb(109, 6, 164);
+    font-family: "Acme", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.button {
+    background: #0c929275;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(115, 0, 255);
+}
+
+@media (min-width: 576px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+}

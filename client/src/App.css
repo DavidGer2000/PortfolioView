@@ -1,0 +1,11 @@
+ /* global */
+
+ .nav-link:hover {
+     transition: 1000ms !important;
+     transform: scale(1.2);
+ }
+
+ .active {
+    color: rgb(109, 6, 164) !important;
+     transform: none !important;
+ }
