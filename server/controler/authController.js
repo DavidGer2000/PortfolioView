@@ -53,7 +53,7 @@ exports.signUp =  async (req, res) => {
       user.password = "******"
       res.cookie("access_token",newToken,{
         secure: true,
-        httpOnly: true,
+        httpOnly: false,
         expires: new Date(Date.now() + 1000 * 60 * 60)
       }).
       json(user,)
