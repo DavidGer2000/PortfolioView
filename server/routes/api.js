@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const { auth } = require("../midllewares/auth");
-const { getTradingData } = require("../controler/tradingData");
+const { getIndiceData } = require("../controler/taseApi");
 
-router.get("/trading-data", auth, getTradingData)
+router.get("/indice-data", getIndiceData)
 
 module.exports = router;

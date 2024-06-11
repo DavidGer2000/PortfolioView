@@ -2,9 +2,9 @@ import React, {useContext} from 'react'
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { userContext } from '../context/userContextProvider';
-import { BASE_URL, doApiMethod } from '../utils/apiService'
-import styles from './userForm.module.css';
+import { userContext } from '../../context/userContextProvider';
+import { BASE_URL, doApiMethod } from '../../utils/apiService'
+import styles from '../css/userForm.module.css';
 
 
 const Login = () => {
